@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\PenjualanController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,3 +22,18 @@ Route::get('/Pelanggan/{PelangganID}/edit',[PelangganController::class,'edit']);
 // update data
 Route::put('/Pelanggan/{PelangganID}',[PelangganController::class,'update']);
 // ===============================================================================
+
+//================================================================================
+//tampilan data
+Route::get('/Penjualan',[PenjualanController::class,'index']);
+//edit data
+Route::get('/penjualan/{PenjualanID}/edit',[Penjualancontroller::class,'edit']);
+//tambah data
+Route::get('/penjualan/tambah',[PenjualanController::class,'tambah']);
+// kirim data
+Route::post('/penjualan/kirim',[PenjualanController::class,'kirim']);
+//hapus data 
+Route::delete('/penjualan/{PenjualanID}',[PenjualanController::class,'delete']);
+// update
+Route::put('/penjualan/{PenjualanID}',[PenjualanController::class,'update']);
+//================================================================================

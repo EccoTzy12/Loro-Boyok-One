@@ -28,7 +28,7 @@ class PelangganController extends Controller
 
     public function edit($PelangganID){
         $pelanggan=pelanggan::where('PelangganID',$PelangganID)->first();
-        return view('Pelanggan.edit',compact([$PelangganID]));
+        return view('Pelanggan.edit',compact(['pelanggan']));
     }
 
     public function update(Request $request, $PelangganID){

@@ -6,22 +6,24 @@
     <title>Kasir | Pelanggan</title>
 </head>
 <body>
+    <center>
     <div class="Judul">
         <h1>Kasir | Tabel Utama</h1>
         <p>List Data Pelanggan</p>
     </div>
     <hr>
-    <div class="create-button">
-        <a href="/Pelanggan/tambah">
-            <input type="submit" value="TAMBAH DATA" class="create">
-        </a>
-    </div>
         <div class="serchbox">
             <form>
                 <input type="text" name="keyword" required>
                 <button class="search">CARI</button>
             </form>
         </div>
+    </center>
+    <div class="create-button">
+        <a href="/Pelanggan/tambah">
+            <input type="submit" value="TAMBAH DATA" class="create">
+        </a>
+    </div>
         <table align="center" border="1">
             <tr align="center">
                 <th>Pelanggan ID</th>

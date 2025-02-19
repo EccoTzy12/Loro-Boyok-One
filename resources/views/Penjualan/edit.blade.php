@@ -1,3 +1,29 @@
-<div>
-    <!-- Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie -->
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kasir | Edit | Penjualan</title>
+</head>
+<body>
+        <div class="data-contrainer">
+            <h1>Penjualan</h1>
+            <p>Edit Data Penjualan</p>
+            <hr>
+            <form action="/Penjualan{{$penjualan->PenjualanID}}" method="POST">
+                @csrf
+                @method('put')
+                <label for="PenjualanID">PenjualanID</label>
+                <input type="number" name="PenjualanID" placeholder="Masukkan Penjualan ID.." value="{{$penjualan->PelangganID}}" disabled>
+                <label for="TanggalPenjualan">TanggalPenjualan</label>
+                <input type="date" name="TanggalPenjualan" placeholder="Masukkan Tangga Penjualan" value="{{$penjualan->TanggalPenjualan}}" required>
+                <label for="TotalHarga">TotalHarga</label>
+                <input type="number" name="TotalHarga" placeholder="Masukkan Total Harga" value="{{$penjualan->TotalHarga}}" required>
+                <label for="PelangganID">PelangganID</label>
+                <input type="number" name="PelangganID" placeholder="Masukkan Pelanggan ID" value="{{$penjualan->PelangganID}}" required>
+                <input type="submit" value="UPDATE DATA" class="update">
+            </form>
+        </div>
+</body>
+</html>
