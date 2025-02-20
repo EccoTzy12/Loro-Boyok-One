@@ -21,7 +21,7 @@
                 <input type="text" name="Harga" placeholder="Masukkan Harga..." required>
                 <label for="Stok">Stok :</label>
                 <input type="text" name="Stok" placeholder="Masukkan Stok..." required>
-                <input type="submit" name="TAMBAH DATA" class="seed">
+                <input type="submit" value="TAMBAH DATA" class="seed">
             </form>
         </div>
 </body>

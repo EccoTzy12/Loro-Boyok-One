@@ -20,12 +20,12 @@ class PenjualanController extends Controller
     }
 
     public function kirim(Request $request){
-        penjualan::create($request->except(['_token','_submit']));
+        penjualan::create($request->except(['_token','submit']));
         return redirect('/penjualan');
     }
 
-    public function delete($penjualanID){
-        $penjualan = Penjualan::where('PenjualanID', $PenjualanID);
+    public function delete($PenjualanID){
+        $penjualan = penjualan::where('PenjualanID', $PenjualanID);
         $penjualan->delete();
         return redirect('/penjualan');
     }
@@ -36,7 +36,7 @@ class PenjualanController extends Controller
     }
 
     public function update(Request $request,$PenjualanID){
-    $penjualan = Penjualan::where('PenjualanID',$PenjualanID);
+    $penjualan = penjualan::where('PenjualanID',$PenjualanID);
     $penjualan->update($request->except(['_token','submit','_method']));
     return redirect('/penjualan');
     }

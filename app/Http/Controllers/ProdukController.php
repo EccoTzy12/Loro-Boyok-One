@@ -30,7 +30,7 @@ class ProdukController extends Controller
         return redirect('/produk');
     }
 
-    public function edit($produkID){
+    public function edit($ProdukID){
         $produk = produk::where('ProdukID',$ProdukID)->first();
         return view('produk.edit',compact(['produk']));
     }

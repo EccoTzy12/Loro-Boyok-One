@@ -11,6 +11,7 @@
             <h1>Kasir | Tabel | Utama</h1>
             <p>List Data Produk</p>
         </div>
+        <hr>
         <div class="searchbox">
             <form>
                 <input type="text" name="keyword" required>
@@ -18,10 +19,9 @@
             </form>
         </div>
     </center>
-    <hr>
         <div class="create-button">
             <a href="/produk/tambah">
-                <input type="submit" value="Tambah Data" class="create">
+                <input type="submit" value="TAMBAH DATA" class="create">
             </a>
         </div>
         
@@ -35,7 +35,7 @@
             </tr>
 
             @foreach ($produk as $eco)
-            <tr>
+            <tr align="center">
                 <td>{{$eco->ProdukID}}</td>
                 <td>{{$eco->NamaProduk}}</td>
                 <td>{{$eco->Harga}}</td>
@@ -43,7 +43,7 @@
                 <td>
                     <form action="/produk/{{$eco->ProdukID}}/edit">
                         @csrf
-                        <input type="submit" value="EDIT DATA" class="edit">
+                        <input type="submit" value="EDIT" class="edit">
                     </form>
                 </td>
                 <td>

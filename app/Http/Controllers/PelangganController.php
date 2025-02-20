@@ -12,7 +12,7 @@ class PelangganController extends Controller
         $pelanggan=pelanggan::where('PelangganID','LIKE','%'.$keyword.'%')
                             ->orWhere('NamaPelanggan','LIKE','%'.$keyword.'%')
                             ->orWhere('Alamat','LIKE','%'.$keyword.'%')
-                            ->orWhere('NomerTelepon','LIKE','%'.$keyword.'%')
+                            /*->orWhere('NomerTelepon','LIKE','%'.$keyword.'%')*/
                             ->paginate();
         return view ('Pelanggan.index',compact(['pelanggan']));
     }

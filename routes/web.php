@@ -33,15 +33,15 @@ Route::get('/penjualan/{PenjualanID}/edit',[Penjualancontroller::class,'edit']);
 // tambah data
 Route::get('/penjualan/tambah',[PenjualanController::class,'tambah']);
 // kirim data
-Route::post('/penjualan/kirim',[PenjualanController::class,'kirim']);
+Route::post('/Penjualan/kirim',[PenjualanController::class,'kirim']);
 // hapus data 
-Route::delete('/penjualan/{PenjualanID}',[PenjualanController::class,'delete']);
+Route::delete('/Penjualan/{PenjualanID}',[PenjualanController::class,'delete']);
 // update Data
 Route::put('/penjualan/{PenjualanID}',[PenjualanController::class,'update']);
 //================================================================================
 
 //================================================================================
-// tamoilan data
+// tampilan data
 Route::get('/produk',[produkcontroller::class,'index']);
 // Tambah Data
 Route::get('/produk/tambah',[ProdukController::class,'tambah']);
