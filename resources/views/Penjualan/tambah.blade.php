@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Tambah Data Kasir</title>
+    <title>Kasir | Tambah | Penjualan</title>
 </head>
 <body>
-    <div class="data-containeer">
+    <div class="data-container">
         <h1>Penjualan</h1>
         <p>Tambah Data</p>
         <hr>

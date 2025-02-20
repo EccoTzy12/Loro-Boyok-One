@@ -8,9 +8,8 @@
 </head>
 <body>
 <center>
-
     <div class="judul">
-        <h1>Kasir | Tabel Utama</h1>
+        <h1>Kasir | Tabel | Utama</h1>
         <p>List Data Penjualan</p>
     </div>
     <hr>

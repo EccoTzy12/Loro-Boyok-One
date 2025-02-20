@@ -7,20 +7,20 @@
     <title>Kasir | Edit | Penjualan</title>
 </head>
 <body>
-        <div class="data-contrainer">
+        <div class="data-container">
             <h1>Penjualan</h1>
             <p>Edit Data Penjualan</p>
             <hr>
             <form action="/Penjualan{{$penjualan->PenjualanID}}" method="POST">
                 @csrf
                 @method('put')
-                <label for="PenjualanID">PenjualanID</label>
+                <label for="PenjualanID">Penjualan ID :</label>
                 <input type="number" name="PenjualanID" placeholder="Masukkan Penjualan ID.." value="{{$penjualan->PelangganID}}" disabled>
-                <label for="TanggalPenjualan">TanggalPenjualan</label>
+                <label for="TanggalPenjualan">Tanggal Penjualan :</label>
                 <input type="date" name="TanggalPenjualan" placeholder="Masukkan Tangga Penjualan" value="{{$penjualan->TanggalPenjualan}}" required>
-                <label for="TotalHarga">TotalHarga</label>
+                <label for="TotalHarga">Total Harga :</label>
                 <input type="number" name="TotalHarga" placeholder="Masukkan Total Harga" value="{{$penjualan->TotalHarga}}" required>
-                <label for="PelangganID">PelangganID</label>
+                <label for="PelangganID">Pelanggan ID :</label>
                 <input type="number" name="PelangganID" placeholder="Masukkan Pelanggan ID" value="{{$penjualan->PelangganID}}" required>
                 <input type="submit" value="UPDATE DATA" class="update">
             </form>
