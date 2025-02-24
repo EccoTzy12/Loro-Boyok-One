@@ -25,30 +25,30 @@ class DatabaseSeeder extends Seeder
         ]);*/
 
         Pelanggan::create([
-            'PelangganID'=> 123,
+            'PelangganID'=> 1,
             'NamaPelanggan' => 'Eko Sugeng Purwanto',
             'Alamat' => 'jlan. Bali',
             'NomerTelepon' => '085967098825',
         ]);
 
         Produk::create([
-            'ProdukID' => 991,
+            'ProdukID' => 2,
             'NamaProduk' => 'Pulpen',
             'Harga' => 3000,
             'Stok' => 10,
         ]);
 
         Penjualan::create([
-            'PenjualanID' => 61,
+            'PenjualanID' => 3,
             'TanggalPenjualan' =>20250210,
             'TotalHarga' => 6000,
-            'PelangganID' => 123,
+            'PelangganID' => 1,
         ]);
 
         Detailpenjualan::create([
-            'DetailID' =>675,
-            'PenjualanID' => 61,
-            'ProdukID' => 991,
+            'DetailID' =>4,
+            'PenjualanID' => 3,
+            'ProdukID' => 2,
             'JumlahProduk' => 20,
             'Subtotal' => 200000,
         ]);

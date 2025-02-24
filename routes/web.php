@@ -27,15 +27,15 @@ Route::put('/Pelanggan/{PelangganID}',[PelangganController::class,'update']);
 
 //================================================================================
 // tampilan data
-Route::get('/Penjualan',[PenjualanController::class,'index']);
+Route::get('/penjualan',[PenjualanController::class,'index']);
 // edit data
-Route::get('/penjualan/{PenjualanID}/edit',[Penjualancontroller::class,'edit']);
+Route::get('/penjualan/{PenjualanID}/edit',[PenjualanController::class,'edit']);
 // tambah data
 Route::get('/penjualan/tambah',[PenjualanController::class,'tambah']);
 // kirim data
-Route::post('/Penjualan/kirim',[PenjualanController::class,'kirim']);
+Route::post('/penjualan/kirim',[PenjualanController::class,'kirim']);
 // hapus data 
-Route::delete('/Penjualan/{PenjualanID}',[PenjualanController::class,'delete']);
+Route::delete('/penjualan/{PenjualanID}',[PenjualanController::class,'delete']);
 // update Data
 Route::put('/penjualan/{PenjualanID}',[PenjualanController::class,'update']);
 //================================================================================
@@ -53,4 +53,19 @@ Route::get('/produk/{ProdukID}/edit',[ProdukController::class,'edit']);
 Route::put('/produk/{ProdukID}',[ProdukController::class,'update']);
 // Hapus Data
 Route::delete('/produk/{ProdukID',[ProdukController::class,'delete']);
+//================================================================================
+
+//================================================================================
+// tampilan data
+Route::get('/detailpenjualan',[DetailpenjualanController::class,'index']);
+// Tambah Data
+Route::get('/detailpenjualan/tambah',[DetailpenjualanController::class,'tambah']);
+// Kirim Data
+Route::post('/detailpenjualan/kirim',[DetailpenjualanController::class,'kirim']);
+// Edit data 
+Route::get('/detailpenjualan/{DetailID}/edit',[DetailpenjualanController::class,'edit']);
+// Update Data
+Route::put('/detailpenjualan/{DetailID}',[DetailpenjualanController::class,'update']);
+// Hapus Data
+Route::delete('/detailpenjualan/{DetailID}',[DetailpenjualanController::class,'delete']);
 //================================================================================

@@ -10,7 +10,7 @@
             <h1>Produk</h1>
             <p>Edit Data Produk</p>
             <hr>
-            <form action="/produk{{$produk->$ProdukID}}" method="POST">
+            <form action="/produk/{{$produk->ProdukID}}" method="POST">
                 @csrf
                 @method('put')
                 <label for="ProdukID">Produk ID :</label>

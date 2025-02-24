@@ -11,7 +11,6 @@
         <h1>Kasir | Tabel | Utama</h1>
         <p>List Data Pelanggan</p>
     </div>
-    <hr>
         <div class="serchbox">
             <form>
                 <input type="text" name="keyword" required>
@@ -19,14 +18,15 @@
             </form>
         </div>
     </center>
+    <hr>
     <div class="create-button">
         <a href="/Pelanggan/tambah">
             <input type="submit" value="TAMBAH DATA" class="create">
         </a>
     </div>
-        <table align="center" border="1">
+        <table align="center" border="5">
             <tr align="center">
-                <th>Pelanggan ID</th>
+                <th>PELANGGAN ID</th>
                 <th>NAMA PELANGGAN</th>
                 <th>ALAMAT</th>
                 <th>NOMER TELEPON</th>

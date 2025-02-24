@@ -11,7 +11,6 @@
             <h1>Kasir | Tabel | Utama</h1>
             <p>List Data Produk</p>
         </div>
-        <hr>
         <div class="searchbox">
             <form>
                 <input type="text" name="keyword" required>
@@ -19,13 +18,13 @@
             </form>
         </div>
     </center>
+    <hr>
         <div class="create-button">
             <a href="/produk/tambah">
                 <input type="submit" value="TAMBAH DATA" class="create">
             </a>
         </div>
-        
-        <table align="center" border="1">
+        <table align="center" border="5">
             <tr align="center">
                 <th>PRODUK ID</th>
                 <th>NAMA PRODUK</th>
